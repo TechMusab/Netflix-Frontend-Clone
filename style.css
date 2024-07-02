@@ -15,6 +15,7 @@
     url("./images/bg.jpg");
   background-size: 125%;
   background-position: center;
+  border-bottom: 11px solid rgba(35, 35, 35, 1);
 }
 .logocontainer {
   padding-top: 25px;
@@ -52,21 +53,26 @@
   color: white;
   font-weight: 400;
 }
-.incontainer{
+.incontainer {
   display: flex;
   align-items: center;
 }
 .incontainer input {
-  padding: 10px;
+  padding: 15px;
   font-size: 16px;
   margin-right: 10px;
-  width: 300px;
+  width: 370px;
   border: 1px solid #8c8c8c;
   border-radius: 2px;
   height: 50px;
   box-sizing: border-box;
   transition: border-color 0.3s ease;
-  background-color: rgba(32,32,32,1);
+  background-color: rgba(32, 32, 32, 1);
+  color: white;
+}
+.incontainer input::placeholder {
+  color: rgb(199, 194, 194);
+  font-weight: 400;
 }
 
 .incontainer input:focus {
@@ -81,7 +87,7 @@
   gap: 12px;
   margin-bottom: 15px;
 }
-.incontainer .getstartedbtn{
+.incontainer .getstartedbtn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -94,7 +100,100 @@
   border-radius: 4px;
   font-size: 20px;
 }
-.incontainer .getstartedbtn img{
-margin-left: 16px;
-width: 30px;
+.incontainer .getstartedbtn img {
+  margin-left: 16px;
+  width: 30px;
+}
+.secondsection {
+  display: flex;
+  padding-left: 150px;
+  align-items: center;
+  background: black;
+  height: 500px;
+  border-bottom: 11px solid rgba(35, 35, 35, 1);
+}
+.heading2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.heading2 h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: white;
+}
+.heading2 h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: white;
+  width: 650px;
+}
+.tv-container {
+  position: relative;
+  width: 600px;
+  height: 400px;
+}
+
+.tv-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.tv-frame {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.boxshot {
+  background-color: black;
+  width: 320px;
+  height: 100px;
+  border-radius: 10px;
+  border: 3px solid gray;
+  display: flex;
+  position: absolute;
+  position: relative;
+  bottom: 100px;
+  left: 125px;
+}
+.boxshot img {
+  height: 5rem;
+  object-fit: contain;
+  margin-left: -100px;
+}
+.para {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: -100px;
+}
+.boxshot .para h4 {
+  color: white;
+}
+.boxshot .para a {
+  color: #0071eb;
+  text-decoration: none;
+}
+.img-container{
+  position: relative;
+}
+.img-container img{
+  height: 80%;
+  width: 90%;
+}
+.circle{
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  width: 3rem;
+  height: 3rem;
+  outline: 2px solid rgb(0, 0, 0);
+  outline-offset: -2px;
+  display: block;
+  background: url(./images/download-icon.gif) center center no-repeat;
+  background-size: 100%;
 }
